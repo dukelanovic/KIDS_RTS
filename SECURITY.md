@@ -1,6 +1,6 @@
 # Security Policy
 
-The best security policy is to make that whole damned thing open source (to have a better damnadtion 
+The best security policy is to make that whole damned thing open source (to have a better damnation 
 among evil developers and producers) So, I am plannig not at all to invent any security on this software.
 Me as a doomed developer - also was programming that game for many nights for the kids didn't gave a sh##
 about all my efforts and for better playing Roblox... (Woodworking would be so much better...)
