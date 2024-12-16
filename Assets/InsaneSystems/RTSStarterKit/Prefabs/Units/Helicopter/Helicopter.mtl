@@ -1,0 +1,66 @@
+newmtl MainPropeller1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka MainPropeller1_diff.png
+map_Kd MainPropeller1_diff.png
+map_d MainPropeller1_diff.png
+
+newmtl M2301Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0784314 0.0784314 0.0784314 
+
+d 1
+
+Ns 0
+
+map_Ka Hellfire11_diff.png
+map_Kd Hellfire11_diff.png
+map_d Hellfire11_diff.png
+
+newmtl Hellfire11Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Hellfire11_diff.png
+map_Kd Hellfire11_diff.png
+map_d Hellfire11_diff.png
+
+newmtl Body1Mtl
+Material Color
+Ka 1 1 1
+Kd 1 1 1
+Ks 0.0627451 0.0627451 0.0627451 
+
+d 1
+
+Ns 0
+
+map_Ka Body1_diff.png
+map_Kd Body1_diff.png
+map_d Body1_diff.png
+
+newmtl RearPropeller1Mtl
+Material Color
+Ka 0.00258583 0.00258583 0.00258583
+Kd 0.00258583 0.00258583 0.00258583
+Ks 0.000162248 0.000162248 0.000162248 
+
+d 1
+
+Ns 0
+

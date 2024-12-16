@@ -1,0 +1,10 @@
+{
+    #include "Unit",
+    "CategoryKey": "TNK",
+    "LabelIcon": "A",
+    
+    "LeavesExplodingWreck": true,
+    "ModelCount": 1,
+    "TransportableSize": 999,
+    "TransporterCapacity": 0,
+}

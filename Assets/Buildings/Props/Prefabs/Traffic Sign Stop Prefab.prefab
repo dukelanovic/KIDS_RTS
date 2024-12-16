@@ -1,0 +1,150 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6301714933610001516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3409558506217632421}
+  m_Layer: 0
+  m_Name: Traffic Sign Stop Prefab
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3409558506217632421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6301714933610001516}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 10.802744, y: 1.034495, z: -189.09677}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1180294167083413945}
+  - {fileID: 8351963272737682203}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7062601399492478197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1180294167083413945}
+  - component: {fileID: 7365315949427335498}
+  - component: {fileID: 2423027221071239903}
+  m_Layer: 0
+  m_Name: Collider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180294167083413945
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7062601399492478197}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.077046394, y: 0.0038050413, z: -0.035446167}
+  m_LocalScale: {x: 0.0062964503, y: 0.05383049, z: 0.0062964503}
+  m_Children: []
+  m_Father: {fileID: 3409558506217632421}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &7365315949427335498
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7062601399492478197}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &2423027221071239903
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7062601399492478197}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &8351963272737810843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3409558506217632421}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_Name
+      value: Traffic Sign1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.07742214
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.027353406
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.03656006
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 52ae347802cc26042b199b1bcde3111c, type: 3}
+--- !u!4 &8351963272737682203 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: 52ae347802cc26042b199b1bcde3111c,
+    type: 3}
+  m_PrefabInstance: {fileID: 8351963272737810843}
+  m_PrefabAsset: {fileID: 0}

@@ -1,0 +1,27 @@
+{
+    "Camera":
+    {
+        "ZoomSpeed": 2000,
+        "RotationSpeed": 200,
+        "PanSpeed": 400
+    },
+    "Hotkeys":
+    {
+        "AttackMove": "Q",
+        "FastMove": "V",
+        "ReverseMove": "G",
+        "FirePosition": "T",
+        "Split": "K",
+        "VisionTool": "R",
+        "Load": "L",
+        "Unload": "U",
+        "Stop": "C",
+        "Smoke": "B",
+        "WeaponsOff": "H",
+        "MenuToggle": "Escape",
+        "UnitInfo": "I",
+        "FlareAttack": "F1",
+        "FlareStop": "F2",
+        "FlareCustom": "F3"
+    }
+}

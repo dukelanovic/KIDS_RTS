@@ -1,0 +1,20 @@
+{
+    #include "Unit",
+    "CategoryKey": "INF",
+    "LabelIcon": "C",
+    "ArtPrefabPath": "UnitModels/Soldier/RussianSoldier",
+    
+    "LeavesExplodingWreck": false,
+    "ModelCount": 10,
+    "TransportableSize": 10,
+    "TransporterCapacity": 0,
+    
+    
+    "Armor": {
+        "FrontArmor": 0,
+        "SideArmor": 0,
+        "RearArmor": 0,
+        "TopArmor": 0,
+        "ApImmunity": true
+    },
+}

@@ -1,0 +1,9 @@
+{
+    #include "Unit",
+    "LabelIcon": "F",
+    
+    "LeavesExplodingWreck": true,
+    "ModelCount": 1,
+    "TransportableSize": 999,
+    "TransporterCapacity": 10,
+}

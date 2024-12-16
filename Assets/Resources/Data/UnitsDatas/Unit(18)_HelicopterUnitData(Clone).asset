@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2523eebf25157584abcdf56245fd0cbf, type: 3}
+  m_Name: KillCopterUnit
+  m_EditorClassIdentifier: 
+  textId: Helicopter
+  icon: {fileID: 21300000, guid: 71ef6becc02334f47889c107b293fd7d, type: 3}
+  unitModel: {fileID: 1271371436806250, guid: c358bd36895fdc54c9d342d0f6e7f8e9, type: 3}
+  canBeDestroyed: 1
+  maxHealth: 100
+  isInfantry: 0
+  visionDistance: 251
+  price: 700
+  buildTime: 4
+  requiredBuildingToUnlock: {fileID: 0}
+  hasMoveModule: 1
+  moveType: 1
+  moveSpeed: 2
+  rotationSpeed: 720
+  flyingFlyHeight: 6
+  canMoveWhileAttackingTarget: 1
+  hasAttackModule: 1
+  attackType: 1
+  attackPossibility: 2
+  attackDistance: 15
+  attackDamage: 7
+  usedDamageType: 1
+  attackShell: {fileID: 1352396323047504, guid: 0f7740b995b9ffa45a3eaf4024af8347,
+    type: 3}
+  allowShootThroughUnitObstacles: 1
+  allowShootThroughAnyObstacles: 1
+  needAimToTargetToShoot: 0
+  stillTryRotateToTargetWhenNoAimNeeded: 1
+  reloadTime: 1
+  hasTurret: 0
+  turretRotationSpeed: 2
+  limitTurretRotationAngle: 0
+  maximumTurretRotationAngle: 15
+  hasSplashDamage: 0
+  splashDamageRadius: 0.25
+  splashDamageValue: 0.5
+  addsElectricity: 0
+  usesElectricity: 0
+  canBeCarried: 0
+  canCarryUnitsCount: 0
+  isHarvester: 0
+  harvestMaxResources: 600
+  harvestTime: 5
+  harvestCarryOutTime: 3
+  explosionEffect: {fileID: 1095235177254582, guid: 396041383660ed14e864f26d897f68f1,
+    type: 3}
+  shootEffect: {fileID: 0}
+  useAnimations: 0
+  animatorController: {fileID: 0}
+  UseGroundAngle: 0
+  WheelsRotationSpeed: 1080
+  shootSoundVariations:
+  - {fileID: 8300000, guid: 04b16b308467d8e49addcd670db9e5bf, type: 3}
+  selectionSoundVariations:
+  - {fileID: 8300000, guid: caf195c014c7c8943b585ddc9a480de7, type: 3}
+  orderSoundVariations:
+  - {fileID: 8300000, guid: aa41b778ae57a7342a03350443602331, type: 3}
+  readySoundVariations: []
+  shootSoundPitchRandomization: 0.05
+  selfPrefab: {fileID: 3847112657735743208, guid: 68393c591bbf1ea4598e65406d243135,
+    type: 3}
+  isBuilding: 0
+  isRefinery: 0
+  RefineryHarversterUnitData: {fileID: 0}
+  isProduction: 0
+  productionCategories: []
+  drawerObject: {fileID: 0}
+  unitAbilities: []

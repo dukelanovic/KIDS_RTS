@@ -1,0 +1,67 @@
+#pragma kernel Init
+#pragma kernel Main
+#pragma kernel Finalize
+
+#include "../Includes/Sampling.hlsl"
+
+Texture2D<float> _InputTex;
+RWTexture2D<int> _TempTex;
+RWTexture2D<float> _OutputTex;
+float _OutputResolution;
+float _Epsilon;
+uint _Iteration;
+
+[numthreads(8, 1, 8)]
+void Init(uint3 id : SV_DispatchThreadID)
+{
+	uint2 pixelPos = id.xz;
+	float2 uv = float2(
+		pixelPos.x / (_OutputResolution - 1),
+		pixelPos.y / (_OutputResolution - 1));
+
+	float input = _InputTex.SampleLevel(_SamplerLinearClamp, uv, 0);
+	_TempTex[pixelPos] = (input > 0);
+}
+
+[numthreads(8, 1, 8)]
+void Main(uint3 id : SV_DispatchThreadID)
+{
+	uint2 pixelPos = id.xz;
+	float2 uv = float2(
+		pixelPos.x * 1.0 / (_OutputResolution - 1),
+		pixelPos.y * 1.0 / (_OutputResolution - 1));
+
+	float odd = _Iteration % 2 == 0;
+	float even = 1 - odd;
+
+	float centerValue = _TempTex[pixelPos];
+	float leftValue = _TempTex[uint2(pixelPos.x - 1, pixelPos.y)];
+	float leftTopValue = _TempTex[uint2(pixelPos.x - 1, pixelPos.y + 1)];
+	float topValue = _TempTex[uint2(pixelPos.x, pixelPos.y + 1)];
+	float topRightValue = _TempTex[uint2(pixelPos.x + 1, pixelPos.y + 1)];
+	float rightValue = _TempTex[uint2(pixelPos.x + 1, pixelPos.y)];
+	float rightBottomValue = _TempTex[uint2(pixelPos.x + 1, pixelPos.y - 1)];
+	float bottomValue = _TempTex[uint2(pixelPos.x, pixelPos.y - 1)];
+	float bottomLeftValue = _TempTex[uint2(pixelPos.x - 1, pixelPos.y - 1)];
+
+	float hasCenter = centerValue > 0;
+	float hasLeft = leftValue > 0;
+	float hasLeftTop = leftTopValue > 0;
+	float hasTop = topValue > 0;
+	float hasTopRight = topRightValue > 0;
+	float hasRight = rightValue > 0;
+	float hasRightBottom = rightBottomValue > 0;
+	float hasBottom = bottomValue > 0;
+	float hasBottomLeft = bottomLeftValue > 0;
+
+	int v = min(1, hasCenter + hasLeft*odd + hasLeftTop*even + hasTop*odd + hasTopRight*even + hasRight*odd + hasRightBottom*even + hasBottom*odd + hasBottomLeft*even);
+	InterlockedAdd(_TempTex[pixelPos], v);
+}
+
+[numthreads(8, 1, 8)]
+void Finalize(uint3 id : SV_DispatchThreadID)
+{
+	uint2 pixelPos = id.xz;
+	float v = _TempTex[pixelPos] * _Epsilon;
+	_OutputTex[pixelPos] = v;
+}

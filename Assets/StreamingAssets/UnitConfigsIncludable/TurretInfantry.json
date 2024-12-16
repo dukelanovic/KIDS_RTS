@@ -1,0 +1,68 @@
+{
+    "Turrets": [{
+        "TurretRef": "Root",
+        "MountRef": "RussianSoldier",
+        "ArcHorizontal": 180,
+        "ArcUp": 0,
+        "ArcDown": 0,
+        "RotationRate": 40,
+        "Children": [
+            {
+                "Priority": 1,
+                "TurretRef": "GunIK",
+                "ArcHorizontal": 3,
+                "ArcUp": 40,
+                "ArcDown": 20,
+                "RotationRate": 40,
+                "Cannon": {
+                    "GroundRange" : 20,
+                    "Accuracy": 40,
+                    "ShotReload": 0.5,
+                    "SalvoLength": 10,
+                    "SalvoReload": 8,
+                    "MuzzleFlash": "Effects/ParticleFX/Prefab/Muzzle Flash",
+                    "Shell": "Projectiles/Prefab/BLUFOR Shell",
+                    "Velocity": 1000,
+                    "Sound": "WeaponSounds/Tank_gun",
+                    "BarrelTipRef": "GunIK",
+                    "WeaponIcon": "WeaponIcons/NP_RPK74",
+                    "Ammo": 
+                    [
+                        {
+                            "DamageType" : "HEAVY_ARMS",
+                            "DamageValue": 0.75,
+                        }
+                    ]
+                }
+            },
+            {
+                "Priority": 2,
+                "TurretRef": "RPGIK",
+                "ArcHorizontal": 0,
+                "ArcUp": 40,
+                "ArcDown": 20,
+                "RotationRate": 40,
+                "Cannon": {
+                    "GroundRange" : 200,
+                    "Accuracy": 30,
+                    "ShotReload": 8,
+                    "SalvoLength": 1,
+                    "SalvoReload": 8,
+                    "MuzzleFlash": "Effects/ParticleFX/Prefab/Muzzle Flash",
+                    "Shell": "Projectiles/Prefab/BLUFOR Shell",
+                    "Velocity": 1000,
+                    "Sound": "WeaponSounds/Tank_gun",
+                    "BarrelTipRef": "RPGIK",
+                    "WeaponIcon": "WeaponIcons/NP_RPG7",
+                    "Ammo": 
+                    [
+                        {
+                            "DamageType" : "SMALL_ARMS",
+                            "DamageValue": 0.5,
+                        }
+                    ]
+                }
+            }
+        ]
+    }]
+}
